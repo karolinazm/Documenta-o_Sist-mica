@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+}
+ 
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ 
+header {
+    background: rebeccapurple;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: rebeccapurple 3px solid;
+}
+ 
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+ 
+nav {
+    margin: 20px 0;
+    background: rebeccapurple;
+}
+ 
+nav ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+ 
+nav ul li {
+    float: left;
+    display: inline;
+    padding: 10px;
+    border-radius: 50px;
+}
+ 
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+ 
+nav ul li a:hover {
+    background: #333;
+    color: #77aaff;
+}
+ 
+main {
+    padding: 20px;
+    background: #fff;
+    min-height: 400px;
+    text-align: center;
+}
+ 
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-top: #77aaff 3px solid;
+    margin-top: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ /* Estilização da Seção de Cartões de Hotel */
+.hotel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+ 
+.hotel-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Largura fixa para os cartões */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+.hotel-image {
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
+}
+ 
+.hotel-card h2 {
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+ 
+.hotel-card .price {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+ 
+.hotel-card .rating {
+    font-size: 1.1em;
+    color: #f39c12; /* Cor amarela para estrelas */
+    text-align: center;
+    margin: 0 0 10px;
+}
+ 
+.hotel-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+ 

@@ -1,0 +1,79 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Importância e Benefícios</h1>
+    <h2>PARA SUA HOSPEDAGEM</h2>
+    <ul>
+        <li>INOVAÇÃO E PRATICIDADE PARA SUA RESERVA</li>
+        <li>ATENDIMENTO EM CHAT OBJETIVO E RÁPIDO PARA A SUA NECESSIDADE.</li>
+    </ul>
+ 
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x600?text=Inovação+e+Praticidade" alt="Inovação e Praticidade">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x600?text=Atendimento+Rápido" alt="Atendimento Rápido">
+            </div>
+ 
+        </div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+ 
+    <h3>PARA O SEU HOTEL</h3>
+    <ul>
+        <li>SISTEMA ORGANIZADO E EFICIENTE PARA UMA MELHOR RENTABILIDADE DO SEU HOTEL</li>
+    </ul>
+    <div class="swiper-slide">
+        <img src="https://via.placeholder.com/800x600?text=Sistema+Organizado" alt="Sistema Organizado">
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 50,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
